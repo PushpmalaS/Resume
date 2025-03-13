@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pushpmala Vijay Shinde</h1>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'objective')">Career Objective</button>
+            <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+            <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-button" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tab-button" onclick="openTab(event, 'personal')">Personal Info</button>
+        </div>
+        <div class="tab-content" id="objective">
+            <p>An individual with a keen interest in software programs, possessing good interpersonal and analytical skills, wishing to use technical knowledge catering to the needs of the company.</p>
+        </div>
+        <div class="tab-content" id="education" style="display:none;">
+            <ul>
+                <li>PhD in Computer Science and Engineering (Pursuing)</li>
+                <li>M.E. Computer Networks and Engineering: 63.81%</li>
+                <li>B.E. Computer Science and Engineering: 62.66%</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="experience" style="display:none;">
+            <p>Total Teaching Experience: 12 years</p>
+            <ul>
+                <li>Assistant Professor at MIT AOE, Pune (2022 - Present)</li>
+                <li>Assistant Professor at ZES’s DCOER, Pune (2014 - 2022)</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="skills" style="display:none;">
+            <ul>
+                <li>Machine Learning</li>
+                <li>Python, Data Science</li>
+                <li>Data Mining, Database</li>
+                <li>C, C++, Core Java</li>
+                <li>Computer Networking</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="personal" style="display:none;">
+            <ul>
+                <li>Date of Birth: 08/05/1987</li>
+                <li>Marital Status: Married</li>
+                <li>Languages Known: English, Marathi, Hindi</li>
+                <li>Nationality: Indian</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
